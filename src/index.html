@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+   @@include('html/1_head.html',{"title":"Virtuality Club"})
+</head>
+
+
+<body>
+
+
+   <div class="wrapper">
+
+      <div class="main-screen index-page">
+         @@include('html/2_header.html',{})
+         <img class="main-screen__background" src="@img/png/main-background.png" alt="img">
+         @@include('html/main_screen.html',{})
+      </div>
+      <main class="main">
+
+         <!--   @@include('html/bread_crumbs/bread_crumbs.html',{"list": [ {"name": "Главная", "link": "index.html"}, {"name": "История", "link": "history.html"}]}) -->
+
+
+      </main>
+
+
+      @@include('html/4_footer.html',{})
+
+
+   </div>
+
+
+   @@include('html/3_scripts.html',{})
+
+
+</body>
+
+</html>
