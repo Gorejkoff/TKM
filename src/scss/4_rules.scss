@@ -52,6 +52,9 @@
 // }
 
 .button-style {
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
    padding: 10px 45px;
    min-height: 42px;
    font-family: BebasNeue;

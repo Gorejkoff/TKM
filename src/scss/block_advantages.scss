@@ -1,0 +1,44 @@
+.block-advantages {
+   padding: 50px 0;
+   background: url('../img/png/background-2.png') center / auto 100%;
+
+   &__container {}
+
+   &__title {
+      margin-bottom: 50px;
+      padding-left: 30px;
+      font-family: BebasNeue;
+      font-size: 26px;
+      color: var(--color-white);
+      background: url('../img/png/logo-bg-3.png') left / contain no-repeat;
+   }
+
+   &__grid {
+      display: flex;
+      justify-content: space-between;
+   }
+
+   &__cell {
+      display: flex;
+      flex-direction: column;
+   }
+
+   &__image {
+      flex: 1 1 auto;
+      padding-left: 25px;
+      margin-bottom: 25px;
+
+      img {
+         max-width: 170px;
+      }
+   }
+
+   &__text {
+      padding-left: 25px;
+      font-size: 13px;
+      line-height: 125%;
+      max-width: 160px;
+      color: var(--color-white);
+      border-left: 1px solid var(--color-waters);
+   }
+}

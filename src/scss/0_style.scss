@@ -9,6 +9,7 @@ body {
    font-family: "Montserrat";
    font-weight: 400;
    background-color: #f9f9f9;
+   color: var(--color-black);
 }
 
 .wrapper {
@@ -22,5 +23,9 @@ body {
 }
 
 @import "main_screen";
+@import "block_search";
+@import "block_advantages";
+@import "block_catalog";
+@import "block_delivery";
 
 @import "6_footer";

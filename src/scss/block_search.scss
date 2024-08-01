@@ -1,0 +1,112 @@
+.block-search {
+
+   &__container {
+      display: flex;
+      gap: 40px;
+   }
+
+   &__block {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+   }
+
+   &__form {
+      padding: 40px;
+      position: relative;
+      width: 362px;
+      height: 246px;
+
+      img {
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         z-index: -1;
+      }
+   }
+
+   &__form-title {
+      margin-bottom: 30px;
+      font-family: BebasNeue;
+      font-size: 26px;
+      color: var(--color-white);
+   }
+
+   &__form-input {
+      height: 42px;
+      margin-bottom: 15px;
+
+      input {
+         padding: 0 20px;
+         height: 100%;
+         width: 100%;
+         font-size: 13px;
+         background-color: var(--color-white);
+         border-radius: 22px;
+      }
+   }
+
+   &__form-button {
+      display: flex;
+      justify-content: flex-end;
+   }
+
+   &__block-image {
+      margin-left: -145px;
+
+      img {
+         margin-top: -40px;
+         width: 560px;
+      }
+   }
+
+   &__content {
+      font-size: 14px;
+      line-height: 150%;
+   }
+
+   &__content-title {
+      margin-left: -40px;
+      margin-bottom: 25px;
+      padding-left: 50px;
+      font-family: BebasNeue;
+      font-size: 36px;
+      line-height: 170%;
+      color: var(--color-blue-3);
+      background: url('../img/png/logo-bg.png') left / contain no-repeat;
+
+      span {
+         color: var(--color-deep-blue);
+      }
+   }
+
+   &__content-quote {
+      margin-bottom: 10px;
+      display: block;
+      padding: 40px;
+      box-shadow: 4px 0px 5px 3px #eef3f7;
+      border-left: 2px solid var(--color-blue-2);
+      background: url('../img/png/logo-bg-2.png') right bottom / auto 60% no-repeat;
+   }
+
+   &__content-text {
+      margin-bottom: 50px;
+   }
+
+   &__content-link {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--color-blue-4);
+
+      span {
+         text-transform: uppercase;
+         text-decoration: underline;
+         text-underline-offset: 5px;
+         text-decoration-color: var(--color-blue);
+      }
+   }
+}
