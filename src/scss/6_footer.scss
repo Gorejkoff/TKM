@@ -1,0 +1,41 @@
+.footer {
+   background-color: var(--color-deep-blue-2);
+
+   &__container {
+      border-bottom: 4px solid var(--color-blue-2);
+   }
+
+   &__body {
+      ol {
+         padding: 18px 0;
+         display: flex;
+         align-items: stretch;
+         justify-content: space-around;
+         flex-wrap: wrap;
+         gap: 20px;
+         height: 100%;
+      }
+
+      li {
+         display: flex;
+         align-items: flex-end;
+         min-height: 100%;
+         list-style: none;
+      }
+
+      a {
+         display: flex;
+         align-items: flex-end;
+         justify-content: center;
+
+         font-family: BebasNeue;
+         font-size: 20px;
+         color: var(--color-blue-3);
+         text-align: center;
+
+         @media (max-width:767.98px) {
+            font-size: 14px;
+         }
+      }
+   }
+}

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+   @@include('html/1_head.html',{"title":"TKM contacts"})
+</head>
+
+
+<body>
+
+
+   <div class="wrapper">
+
+      <div class="main-screen contacts">
+         @@include('html/2_header.html',{})
+         <div class="contacts__container">
+            @@include('html/bread_crumbs/bread_crumbs.html',{"list": [ {"name": "Главная", "link": "index.html"}, {"name": "Контакты", "link": "contacts.html"}]})
+         </div>
+         <img class="main-screen__background" src="@img/png/main-background.png" alt="img">
+      </div>
+
+      <main class="main">
+
+
+
+         @@include('html/block_contacts.html',{})
+
+      </main>
+
+
+      @@include('html/4_footer.html',{})
+
+
+   </div>
+
+
+   @@include('html/3_scripts.html',{})
+
+
+</body>
+
+</html>

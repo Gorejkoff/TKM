@@ -1,33 +1,58 @@
 .bread-crumbs {
-   &__body {
-      padding-top: 20px;
-      padding-bottom: 80px;
-      display: flex;
-      gap: 5px;
+   padding-top: 30px;
+   padding-bottom: 60px;
+   display: flex;
+   flex-wrap: wrap;
+   gap: 5px;
 
-      li {
-         &:not(:first-child) {
-            a {
-               &::before {
-                  content: '|';
-                  margin-right: 5px;
-               }
-            }
-         }
+   a {
+      font-size: 13px;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      text-decoration-thickness: 2px;
+      text-decoration-color: var(--color-blue);
+      color: var(--color-deep-blue);
+      font-weight: 700;
+   }
 
-         &:last-child {
-            a {
-               pointer-events: none;
-               color: var(--color-white);
+   li {
+      list-style: none;
+
+      &:not(:first-child) {
+         a {
+            position: relative;
+            padding-left: 10px;
+
+            &::before {
+               content: '';
+               position: absolute;
+               top: 50%;
+               left: 0;
+               transform: translateY(-50%);
+               min-width: 5px;
+               height: 5px;
+               margin-right: 5px;
+               background: url('../img/svg/arrow-1.svg') center no-repeat;
             }
+
          }
       }
 
-      a {
-         font-size: 14px;
-         line-height: 140%;
-         letter-spacing: 0.03em;
-         color: var(--color-gray2);
+      &:last-child {
+         a {
+            pointer-events: none;
+            text-decoration: none;
+            font-weight: 400;
+         }
       }
    }
+}
+
+.contacts__container {
+   .bread-crumbs {
+      a {
+         color: var(--color-white);
+      }
+   }
+
 }

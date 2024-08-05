@@ -1,8 +1,13 @@
 .block-catalog {
-   overflow-x: clip;
+   overflow-x: hidden;
 
    &__container {
       display: flex;
+
+      @media (max-width:767.98px) {
+         margin-bottom: 35px;
+         display: block;
+      }
    }
 
    &__title {
@@ -22,19 +27,31 @@
    &__content {
       flex: 0 0 77%;
       padding-top: 40px;
+
+      @media (max-width:767.98px) {
+         margin-bottom: 30px;
+      }
    }
 
    &__grid {
       padding-right: 30px;
-
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       column-gap: 30px;
       row-gap: 45px;
+
+      @media (max-width:991.98px) {
+         grid-template-columns: 1fr 1fr;
+      }
+
+      @media (max-width:767.98px) {
+         padding-right: 0;
+         grid-template-columns: 1fr;
+      }
    }
 
    &__cell-shadow {
-      filter: drop-shadow(3px 3px 10px #e2e6e9);
+      filter: drop-shadow(3px 3px 10px #7c7c7c25);
    }
 
    &__cell {
@@ -84,6 +101,7 @@
    }
 
    &__download {
+      padding-left: 10px;
       position: relative;
 
       &::after {
@@ -95,6 +113,10 @@
          width: 100vw;
          height: 100%;
          background-color: var(--color-light-grey);
+
+         @media (max-width:767.98px) {
+            background-color: transparent;
+         }
       }
    }
 
@@ -103,6 +125,10 @@
       z-index: 2;
       margin-left: -40%;
       width: 160%;
+
+      @media (max-width:767.98px) {
+         display: none;
+      }
    }
 
    &__download-item {

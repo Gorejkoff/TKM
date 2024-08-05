@@ -18,8 +18,17 @@ body {
    min-height: 100vh;
 }
 
-.main {
-   flex: 1 1 auto;
+.main {}
+
+.quote {
+   margin-bottom: 10px;
+   display: block;
+   padding: 40px;
+   font-size: 14px;
+   line-height: 150%;
+   box-shadow: 4px 0px 5px 3px #e4e5e95e;
+   border-left: 2px solid var(--color-blue-2);
+   background: var(--color-white) url('../img/png/logo-bg-2.png') right bottom / auto 60% no-repeat;
 }
 
 @import "main_screen";
@@ -27,5 +36,10 @@ body {
 @import "block_advantages";
 @import "block_catalog";
 @import "block_delivery";
+@import "block_partners";
+@import "block-info";
+@import "block_contacts";
+@import "about-company";
+@import "bread-crumbs";
 
 @import "6_footer";

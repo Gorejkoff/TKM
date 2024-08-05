@@ -1,0 +1,120 @@
+.block-catalog+.block-delivery {
+   margin-top: -120px;
+   padding-top: 165px;
+
+   @media (max-width:767.98px) {
+      margin-top: 0;
+      padding-top: 35px;
+   }
+}
+
+.block-delivery {
+   padding-top: 35px;
+   background: url('../img/jpg/image-5.jpg') center / cover;
+   overflow: hidden;
+
+   &__container {
+      display: flex;
+
+      @media (max-width:767.98px) {
+         flex-direction: column;
+      }
+   }
+
+   &__left {
+      flex: 1 1 auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      @media (max-width:767.98px) {
+         order: 2;
+      }
+   }
+
+   &__left-text {
+      display: flex;
+      justify-content: flex-end;
+      font-family: BebasNeue;
+      color: var(--color-white);
+      font-size: 21px;
+   }
+
+   &__left-text-sell {
+      position: relative;
+      padding-top: 8px;
+      padding-left: 70px;
+      padding-right: 60px;
+      max-width: 370px;
+
+      img {
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 60px;
+      }
+   }
+
+   &__left-img {
+
+      img {
+         margin-left: -10%;
+         width: 110%;
+      }
+   }
+
+   &__right {
+      padding-bottom: 80px;
+      flex: 0 0 400px;
+
+      @media (max-width:767.98px) {
+         flex: 0 0 auto;
+         padding-bottom: 30px;
+         order: 1;
+      }
+
+      .index-page & {
+         padding-bottom: 150px;
+      }
+   }
+
+   &__title {
+      margin-bottom: 20px;
+      padding-left: 20px;
+      font-family: BebasNeue;
+      font-size: 26px;
+      line-height: 200%;
+      color: var(--color-white);
+      background: url('../img/png/logo-bg-3.png') left / contain no-repeat;
+   }
+
+   &__content {
+      display: flex;
+      gap: 20px;
+   }
+
+   &__icon {}
+
+   &__text {
+      font-size: 14px;
+      line-height: 155%;
+      color: var(--color-white);
+   }
+
+   &__buttons {
+      margin-top: 35px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+
+      .block-delivery__more {
+         font-size: 13px;
+         color: var(--color-white);
+         text-decoration: underline;
+         text-underline-offset: 5px;
+         text-decoration-color: var(--color-blue);
+      }
+   }
+}

@@ -6175,3 +6175,34 @@ var Swiper = function () {
    return Q.use(ce),
       Q
 }();
+
+
+
+if (document.querySelector('.block-partners__swiper')) {
+   const swiper = new Swiper('.block-partners__swiper', {
+      keyboard: {
+         enabled: true,
+         onlyInViewport: true,
+      },
+      centeredSlides: true,
+      loop: true,
+      spaceBetween: 0,
+      speed: 300,
+      slidesPerView: 2,
+      navigation: {
+         nextEl: '.block-partners__swiper-prev',
+         prevEl: '.block-partners__swiper-next',
+      },
+      breakpoints: {
+         992: {
+            slidesPerView: 4.9,
+            spaceBetween: 0
+         },
+         768: {
+            slidesPerView: 3,
+            spaceBetween: 0
+         }
+      }
+   });
+
+}

@@ -1,0 +1,200 @@
+.block-contacts {
+   padding-bottom: 25px;
+   background: url('../img/jpg/background-metal-2.jpg') center;
+
+   &__container {}
+
+   &__body {
+      margin-bottom: -120px;
+      display: flex;
+      gap: 5%;
+      background: url('../img/png/book.png') center / 100% 100% no-repeat;
+      transform: translateY(-120px);
+
+      @media (max-width:767.98px) {
+         display: block;
+         background: url('../img/png/book-2.png') center / 100% 100% no-repeat;
+      }
+
+      &>* {
+         flex: 1 1 10%;
+      }
+   }
+
+   &__data {
+      padding: 30px 40px 80px;
+      background: url('../img/png/logo-bg-2.png') 100% 95% / 40% auto no-repeat;
+
+      @media (max-width:767.98px) {
+         padding: 20px;
+      }
+   }
+
+   &__image-body {
+      position: relative;
+      margin-top: -23px;
+      padding-bottom: 30%;
+
+      img {
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         object-fit: contain;
+      }
+
+      @media (max-width:767.98px) {
+         margin-top: -15px;
+      }
+   }
+
+   &__title {
+      margin-bottom: 25px;
+      padding-left: 20px;
+      font-size: 26px;
+      line-height: 200%;
+      font-family: BebasNeue;
+      color: var(--color-blue-3);
+      background: url('../img/png/logo-bg.png') left / contain no-repeat;
+
+      span {
+         color: var(--color-deep-blue);
+      }
+   }
+
+   &__address {
+      margin-bottom: 25px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 14px;
+
+      img {
+         height: 13px;
+      }
+   }
+
+   &__item {
+      margin-bottom: 25px;
+      display: flex;
+      justify-content: space-between;
+
+      &>* {
+         display: block;
+      }
+
+      @media (max-width:991.98px) {
+         display: block;
+      }
+
+      .block-contacts__mail {
+         font-size: 13px;
+         color: var(--color-deep-blue);
+         text-decoration: underline;
+         text-decoration-color: var(--color-blue);
+         text-underline-offset: 3px;
+      }
+
+   }
+
+   &__button {
+      position: relative;
+      margin-bottom: 30px;
+
+      img {
+         position: absolute;
+         top: 50%;
+         left: 15px;
+         transform: translateY(-50%);
+      }
+
+      &.button-style {
+         padding-left: 50px;
+         padding-right: 30px;
+      }
+   }
+
+   &__namber {
+      margin-bottom: 10px;
+      font-family: BebasNeue;
+      font-size: 28px;
+      color: var(--color-blue-3);
+
+      span {
+         color: var(--color-deep-blue);
+      }
+   }
+
+   &__links {
+      a {
+         display: block;
+         margin-bottom: 20px;
+         color: var(--color-deep-blue);
+         text-decoration: underline;
+         text-decoration-color: var(--color-blue);
+         text-underline-offset: 3px;
+      }
+   }
+
+   &__map {
+      padding: 4% 5% 7% 0;
+
+      @media (max-width:767.98px) {
+         padding: 10px 10px 40px;
+      }
+   }
+
+   &__map-image {
+      height: 100%;
+      position: relative;
+      padding-bottom: 92%;
+      overflow: hidden;
+      padding-bottom: 70%;
+
+      img {
+
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+      }
+   }
+
+   &__signature {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      gap: 20px;
+      color: var(--color-white);
+      flex-wrap: wrap;
+   }
+
+   &__signature-text {
+      font-size: 13px;
+   }
+
+   &__signature-title {
+      font-family: BebasNeue;
+      font-size: 25px;
+      color: var(--color-white);
+      text-align: center;
+
+      @media (max-width:767.98px) {
+         flex: 0 0 100%;
+         font-size: 20px;
+      }
+
+      &>*:first-child {
+         font-size: 1.8em;
+      }
+   }
+
+   &__signature-logo {
+      img {
+         height: 55px;
+      }
+   }
+}

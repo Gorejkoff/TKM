@@ -1,5 +1,4 @@
 .header {
-   margin-bottom: 25px;
 
    background-color: var(--color-bg-header);
    color: var(--color-white);
@@ -24,6 +23,12 @@
       align-items: center;
       justify-content: space-between;
       gap: 20px;
+      @include size_768_1100 (padding-top, 40, 20);
+      @include size_768_1100 (padding-bottom, 40, 20);
+
+      @media (max-width:767.98px) {
+         padding: 25px 0;
+      }
    }
 
    &__menu {
@@ -38,12 +43,22 @@
          width: 40px;
          height: 40px;
       }
+
+      @media (max-width:767.98px) {
+         span {
+            display: none;
+         }
+      }
    }
 
    &__address {
       display: flex;
       align-items: center;
       gap: 10px;
+
+      @media (max-width:767.98px) {
+         display: none;
+      }
    }
 
    &__address-img {
@@ -54,23 +69,37 @@
 
    &__address-text {
       line-height: 125%;
+      @include size_768_1100 (font-size, 14, 12);
    }
 
    &__logo {
       img {
-         height: 56px;
+         max-height: 56px;
+         width: 210px;
+         @include size_768_1100 (width, 210, 150);
+
+         @media (max-width:767.98px) {
+            width: 150px;
+         }
       }
    }
 
    &__phone {
       text-align: end;
+
+      @media (max-width:767.98px) {
+         display: none;
+      }
    }
 
    &__phone-namber {
+      margin-bottom: 5px;
       font-family: BebasNeue;
       font-size: 29px;
+      @include size_768_1100 (font-size, 29, 18);
 
       span {
+         white-space: nowrap;
          color: var(--color-waters);
       }
    }
@@ -81,12 +110,21 @@
       text-decoration: underline;
       text-decoration-color: var(--color-blue);
       text-underline-offset: 3px;
+      @include size_768_1100 (font-size, 13, 10);
    }
 
    &__call {
       position: relative;
       padding-left: 45px;
       padding-right: 35px;
+
+      @media (max-width:767.98px) {
+         padding: 0 21px;
+
+         span {
+            display: none;
+         }
+      }
    }
 
    &__call-img {
@@ -94,5 +132,10 @@
       top: 50%;
       left: 15px;
       transform: translateY(-50%);
+
+      @media (max-width:767.98px) {
+         left: 50%;
+         transform: translate(-50%, -50%);
+      }
    }
 }
